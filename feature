@@ -1,1 +1,1 @@
-feature 6 version X
+feature 6 version new
