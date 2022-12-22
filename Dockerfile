@@ -1,7 +1,9 @@
 # syntax=docker/dockerfile:1
-FROM node:18-alpine
+FROM openjdk
 WORKDIR /git-practice
 COPY . .
-RUN yarn install --production
-CMD ["node", "git-practice/App.java"]
+
+RUN javac App.java
+RUN ls
+CMD ["java", "App"]
 EXPOSE 3000
