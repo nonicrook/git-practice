@@ -10,6 +10,7 @@ public class App {
         if (mac_name == null) {
             System.out.println("I am the default!");
         } else {
+            // TODO: use combine or replace to have this say I am <MAC_NAME>
             System.out.println(mac_name);
         }
     }
