@@ -1,8 +1,8 @@
 # syntax=docker/dockerfile:1
-FROM openjdk
+FROM maven
 WORKDIR /git-practice
 COPY . .
-RUN javac noni/App.java
-CMD ["java", "noni/App"]
+RUN mvn clean package
+RUN ls
 ENV MAC_NAME=macdaddy
 RUN echo "The environment variable is $MAC_NAME"
